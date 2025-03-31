@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class ProfessorService implements IProfessorService {
+public class ProfessorService implements 1ProfessorService {
 
     @Autowired
     private ProfessorRepository professorRepository;
@@ -32,11 +32,9 @@ public class ProfessorService implements IProfessorService {
 
     @Override
     public void atualizar(Professor professor) {
-
     }
 
     @Override
     public void excluir(Long id) {
-
     }
 }

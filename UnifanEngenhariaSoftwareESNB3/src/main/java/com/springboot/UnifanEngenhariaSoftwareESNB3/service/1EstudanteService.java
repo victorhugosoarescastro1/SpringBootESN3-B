@@ -3,15 +3,15 @@ package com.example.universidadeESN3.service;
 import com.example.universidadeESN3.entity.Aluno;
 import java.util.List;
 
-public interface IAlunoService {
+public interface 1EstudanteService {
 
     Aluno buscarPorId(Long id);
 
-    List<Aluno> buscarTodos();
+    List<Estudante> buscarTodos();
 
-    Aluno salvar(Aluno aluno);
+    Estudante salvar(Estudante estudante);
 
-    void atualizar(Aluno aluno);
+    void atualizar(Estudante estudante);
 
     void excluir(Long id);
 }

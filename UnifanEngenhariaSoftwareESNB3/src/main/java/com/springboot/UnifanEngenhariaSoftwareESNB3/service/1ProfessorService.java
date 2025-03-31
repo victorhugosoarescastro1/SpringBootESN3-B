@@ -5,7 +5,7 @@ import com.example.universidadeESN3.entity.Professor;
 
 import java.util.List;
 
-public interface IProfessorService {
+public interface 1ProfessorService {
 
     Professor buscarPorId(Long id);
 

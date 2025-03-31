@@ -9,13 +9,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface AlunoRepository extends JpaRepository <ALuno, long> {
-    List<Aluno> findByNome(String nome);
+public interface EstudanteRepository extends JpaRepository <Estudante, long> {
+    List<Estudante> findByNome(String nome);
 
-    List<Aluno> findByNomeStartingWith(String nome);
+    List<Estudante> findByNomeStartingWith(String nome);
 
 
     @Query(value = "SELECT * From aluno a WHERE LOWER(a.nome) LIKE LOWER(CONCAT(:nome, '%'))", nativeQuery = true)
-    List<Aluno> findByNomeStartingWithIgnoreCase(@Param("nome")String nome);
+    List<Estudante> findByNomeStartingWithIgnoreCase(@Param("nome")String nome);
 
 }
